@@ -11,7 +11,7 @@ Build
 -----
 
 ### 1 clone repository
-> git clone git@github.com:slothink/quickstart-sai02.git
+> git clone git@github.com:slothink/quickstart-sai03.git
 
 ### 2 execute sql on database
 
