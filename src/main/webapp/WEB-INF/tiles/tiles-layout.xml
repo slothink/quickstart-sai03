@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="default-layout" template="/WEB-INF/layout/default-layout.jsp">
+        <put-attribute name="title" value="No Title" />
+        <put-attribute name="body" value="/WEB-INF/layout/empty-layout.jsp" />
+    </definition>
+
+    <definition name="WILDCARD:tiles/default/**" extends="default-layout">
+        <put-attribute name="title" expression="Spring4, Hibernate4 with XML Configuration Web Application" />
+        <put-attribute name="body" value="/WEB-INF/jsp/{1}.jsp" />
+    </definition>
+
+    <definition name="WILDCARD:tiles/auth/**" template="/WEB-INF/layout/auth-layout.jsp">
+        <put-attribute name="title" expression="Spring4, Hibernate4 with XML Configuration Web Application" />
+        <put-attribute name="body" value="/{1}.jsp" />
+    </definition>
+
+    <definition name="WILDCARD:tiles/pure/**" template="/WEB-INF/layout/empty-layout.jsp">
+        <put-attribute name="body" value="/{1}.jsp" />
+    </definition>
+
+</tiles-definitions>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+	http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="vine" transaction-type="RESOURCE_LOCAL">
+        <description>My Persistence Unit</description>
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+        <!--<mapping-file>solme.framework.servicelib.config.hbm.xml</mapping-file>-->
+        <!--<mapping-file>solme.framework.servicelib.authority.hbm.xml</mapping-file>-->
+        <!--<mapping-file>solme.framework.servicelib.solmefile.hbm.xml</mapping-file>-->
+        <!--<mapping-file>solme.framework.servicelib.member.hbm.xml</mapping-file>-->
+
+        <!--<mapping-file>solme.ecm.fr.hbm.xml</mapping-file>-->
+        <!--<mapping-file>solme.ecm.cm.hbm.xml</mapping-file>-->
+
+        <!--<class>com.comas.solme.edms.core.document.auth.policy.AuthorityPolicy</class>-->
+        <!--<class>com.comas.solme.edms.core.document.auth.policy.entry.AuthorityPolicyEntry</class>-->
+        <!--<class>com.comas.solme.edms.core.recent.RecentItem</class>-->
+        <!--<class>com.comas.solme.edms.core.reuqest_authority.RequestAuthority</class>-->
+
+        <class>world.sai.misc.quickstart.sai02.core.user.User</class>
+
+
+        <!--
+        <mapping-file>vine.fr.oracle.hbm.xml</mapping-file>
+        <mapping-file>vine.cm.oracle.hbm.xml</mapping-file>
+        <mapping-file>vine.member.oracle.hbm.xml</mapping-file>
+        <mapping-file>vine.authority.oracle.hbm.xml</mapping-file>
+
+        <mapping-file>vine.cm.mysql.hbm.xml</mapping-file>
+        <mapping-file>vine.member.mysql.hbm.xml</mapping-file>
+         -->
+        <properties>
+            <!--
+            <property name="hibernate.archive.autodetection" value="class, hbm" />
+             -->
+            <property name="hibernate.archive.autodetection" value="class" />
+        </properties>
+    </persistence-unit>
+
+</persistence>
