@@ -1,10 +1,10 @@
-Spring4 + Hibernate4 + Gradle
+Misc Sai 03
 =============================
 Configurations
 - Spring 4.1.7.RELEASE (XML Configurations)
 - Hibernate 4.3.10.Final (JPA Annotation Configuration)
 - Tiles 3.0.5
-- Gradle Build
+- Maven Build
 - CoffeeScript
 
 Build
